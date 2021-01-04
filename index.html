@@ -28,7 +28,7 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <script src="scripts.js"></script>
+
 
     <title>Stephan Motha</title>
 
@@ -40,9 +40,9 @@
 
 <body id="home-scroll">
     <!-- header -->
-    <nav class="fixed-top navbar navbar-expand-lg navbar-dark bg-dark" id="nav1">
-        <div class='container'>
+    <nav class="fixed-top navbar navbar-expand-lg navbar-dark" id="nav1">
 
+        <div class='container'>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,18 +51,26 @@
 
 
             <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                <ul class="navbar-nav ">
+                <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#home-scroll" id="top">Home<span class="sr-only">(current)</span></a>
+                        <a class="nav-link under-white" href="#home-scroll" id="top">Home<span
+                                class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#about-scroll" id="top">About</a>
+                        <a class="nav-link under-white" href="#about-scroll" id="top">About</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#projects-scroll" id="top">Projects</a>
+                        <a class="nav-link under-white" href="#projects-scroll" id="top">Projects</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#exp-scroll" id="top">Experience</a>
+                        <a class="nav-link under-white" href="#exp-scroll" id="top">Experience</a>
+                    </li>
+                    <li class="nav-item active gallery">
+                        <a class="nav-link under-white" href="#photos-scroll" id="top">Photos</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link under-white" href="pics/Stephan_Motha_resume_2.pdf" target='_blank'
+                            id="top">Resume</a>
                     </li>
 
                 </ul>
@@ -74,18 +82,18 @@
     <section class='hero'>
 
         <picture>
-            <source media="(min-width: 900px)" srcset="pics/bridge.jpg" class='img-fluid'>
-            <source media="(min-width: 800px)" srcset="pics/bridge.jpg" class='img-fluid'>
-            <source media="(min-width: 500px)" srcset="pics/fall.jpg" class='img-fluid'>
-            <img src="pics/portrait-path.jpg" alt="IfItDoesntMatchAnyMedia" class='img-fluid'>
+            <source media="(min-width: 900px)" srcset="pics/jay-mantri-TFyi0QOx08c-unsplash.jpg" class='img-fluid'>
+            <source media="(min-width: 700px)" srcset="pics/croatia1.jpg" class='img-fluid'>
+            <source media="(min-width: 500px)" srcset="pics/italy1.jpg" class='img-fluid'>
+            <img src="pics/alberta2.jpg" alt="IfItDoesntMatchAnyMedia" class='img-fluid'>
         </picture>
 
         <div class='hero-text p-5'>
 
 
 
-            <h1 class='name' id="hero-title">Stephan Motha</h1>
-            <h4 class="program" id="hero-text">Computer Science Specialist | University of Toronto</h4>
+            <h1 class='name' id="hero-name">Stephan Motha</h1>
+            <h4 class="program" id="hero-program">Computer Science Specialist | University of Toronto</h4>
             <a href="#about-scroll"><button type="button" class="btn btn-outline-light"
                     id="continue">Continue</button></a>
 
@@ -102,14 +110,16 @@
         <div class='container justify-content-center'>
             <hr>
             <h2 class='about-title' id='text-title'>About Me</h2>
-            <a href=""></a><img src="pics/pp.JPG" alt="..." id="pp">
+            <img src="pics/pp.JPG" alt="..." id="pp">
 
             <p id='text'>Hello, my name is Stephan Motha. I am currectly a second year Computer Science Specialist at
                 the
-                University of Toronto. I am always up for a challenge and enjoy keeping up with modern solftware to
-                solve real-world problems and to create useful applications. Some Hobbies of mine include playing
+                University of Toronto. I am always up for a challenge and enjoy keeping up with modern software to
+                solve real-world problems and to create useful applications. I love learning new ways to accomplish
+                everyday tasks and collaborating with others to accomplish this goal. Some Hobbies of
+                mine include playing
                 basketball, keeping in touch with
-                nature, and photography</p>
+                nature, and photography.</p>
 
 
             <hr id="projects-scroll">
@@ -136,12 +146,12 @@
                 <div class="card" style="width: 17rem; height: 494px;">
                     <img src="pics/ig.jpg" class="card-img-bottom" alt="..." id="beats">
                     <div class="card-body shadow">
-                        <h5 class="card-title" id="project-title"> Instagram Stats Bot</h5>
+                        <h5 class="card-title" id="project-title">Instagram Stats Bot</h5>
                         <p class="card-text" id="project-text"> Using python and the web-based automation tool,
                             Selenium, I was able to impersonate a user in a web browser and gather data from a users
                             profile to notify them of a variety of
-                            account statistics. <br><a href="github.com"><i class="fa fa-github icon-large"
-                                    aria-hidden="true" id="git">
+                            account statistics. <br><a href="https://github.com/stephanmotha" target="_blank"><i
+                                    class="fa fa-github icon-large" aria-hidden="true" id="git">
                                 </i></a>
                         </p>
 
@@ -151,12 +161,13 @@
                 <div class="card" style="width: 17rem; height: 515px;">
                     <img src="pics/beats2.jpg" class="card-img-bottom" alt="..." id="beats">
                     <div class="card-body shadow">
-                        <h5 class="card-title" id="project-title"> Beats Web Scraper</h5>
+                        <h5 class="card-title" id="project-title">Beats Web Scraper</h5>
                         <p class=" card-text" id="project-text"> I used Python and the Beautiful Soup library to
                             extract
                             Beats headphone prices from a web page. All prices are saved in a CSV file and if they are
                             below a certain price, the application
-                            will send a notification straight to the users email!<br><a href="github.com"><i
+                            will send a notification straight to the users email!<br><a
+                                href="https://github.com/stephanmotha" target="_blank"><i
                                     class="fa fa-github icon-large" aria-hidden="true" id="git">
                                 </i></a>
                         </p>
@@ -176,8 +187,8 @@
                         <p class="card-text" id="project-text"> I created a simple but elegant personal website. The
                             website is completely responsive, interactive
                             and optimized for all devices using HTML, CSS with the help of Bootstrap and
-                            jQuery. You're on it right now!<br><a href="github.com"><i class="fa fa-github icon-large"
-                                    aria-hidden="true" id="git">
+                            jQuery. You're on it right now!<br><a href="https://github.com/stephanmotha"
+                                target="_blank"><i class="fa fa-github icon-large" aria-hidden="true" id="git">
                                 </i></a>
                         </p>
 
@@ -187,23 +198,7 @@
                 </div>
 
 
-                <div class="card" style="width: 17rem;">
-                    <img src="pics/chrome.jpg" class="card-img-bottom" alt="..." id="beats">
-                    <div class="card-body shadow">
-                        <h5 class="card-title" id="project-title">Social Media Manager</h5>
-                        <p class="card-text" id="project-text"> Since bookmarks often get cluttered and tedious to
-                            search through, using HTML, CSS and JavaScript, I was able to create a simple
-                            but useful Chrome Browser extension that gathers all of the most popular social media
-                            platforms in one place and allows users to modify the platforms available as well as toggle
-                            dark mode. <br><a href="github.com"><i class="fa fa-github icon-large" aria-hidden="true"
-                                    id="git">
-                                </i></a>
-                        </p>
 
-
-
-                    </div>
-                </div>
 
 
 
@@ -228,8 +223,8 @@
                         <h5 class="card-title" id="project-title">Two-Player Racing Game</h5>
                         <p class="card-text" id="project-text">Using the p5.js library, I was able to create a
                             two-player racing game in a web browser. The game contains moving obstacles and easy to use
-                            controls.<br><a href="github.com"><i class="fa fa-github icon-large" aria-hidden="true"
-                                    id="git">
+                            controls.<br><a href="https://github.com/stephanmotha" target="_blank"><i
+                                    class="fa fa-github icon-large" aria-hidden="true" id="git">
                                 </i></a>
                         </p>
 
@@ -237,6 +232,23 @@
 
                     </div>
                 </div>
+
+                <div class="card" style="width: 17rem; height: 582px;">
+                    <img src="pics/chrome.jpg" class="card-img-bottom" alt="..." id="beats">
+                    <div class="card-body shadow">
+                        <h5 class="card-title" id="project-title">Social Media Manager</h5>
+                        <p class="card-text" id="project-text"> Since bookmarks often get cluttered and tedious to
+                            search through, using HTML, CSS and JavaScript, I was able to create a simple
+                            but useful Chrome Browser extension that gathers all of the most popular social media
+                            platforms in one place and allows users to modify the platforms available as well as toggle
+                            dark mode. <br><a href="https://github.com/stephanmotha" target="_blank"><i
+                                    class="fa fa-github icon-large" aria-hidden="true" id="git">
+                                </i></a>
+                        </p>
+                    </div>
+                </div>
+
+
 
                 <div class="card" style="width: 17rem; height: 447px;">
                     <img src="pics/hangman.jpg" class="card-img-bottom" alt="..." id="beats">
@@ -245,36 +257,35 @@
                         <p class="card-text" id="project-text"> I created a rendition of the classic Hangman game using
                             Java and a GUI. Users can choose from a variety of themes/topics and scores are saved for
                             future users!
-                            <br><a href="github.com"><i class="fa fa-github icon-large" aria-hidden="true" id="git">
+                            <br><a href="https://github.com/stephanmotha" target="_blank"><i
+                                    class="fa fa-github icon-large" aria-hidden="true" id="git">
                                 </i></a>
                         </p>
-
-
-
                     </div>
                 </div>
 
 
-
-
-
-
-
+                <div class="card" style="width: 17rem; height: 440px;">
+                    <img src="pics/discord-logo.jpg" class="card-img-bottom" alt="..." id="beats">
+                    <div class="card-body shadow">
+                        <h5 class="card-title" id="project-title"> Discord Bot </h5>
+                        <p class="card-text" id="project-text"> Using Node.js and discord.js, I created a Discord bot
+                            that enables the
+                            use of
+                            server polls, questions, lotteries, timers, answers complex math problems and manages
+                            deleted and
+                            edited messages.
+                            <br><a href="https://github.com/stephanmotha" target="_blank"><i
+                                    class="fa fa-github icon-large" aria-hidden="true" id="git">
+                                </i></a>
+                        </p>
+                    </div>
+                </div>
 
 
             </div>
 
-
-
-
-
-
-
-
             <hr id="exp-scroll">
-
-
-
 
         </div>
 
@@ -285,13 +296,33 @@
     <!-- EXPERIENCE -->
     <section class="exp">
         <div class='container'>
-            <h2 id='text-title' class=" exp-title">Experience</h2>
+            <div class="center-text">
+                <h2 id='text-title' class=" exp-title">Experience</h2>
+            </div>
             <div class="row justify-content-center" id="exp-wrap">
 
-                <div class="col-md-11">
+                <div class="col-md-11" style="padding-top: 20px;">
                     <div class="media">
                         <div class="center">
-                            <img src="pics/trees.jpg" class="mr-3" alt="" id='exp-image'>
+                            <img src="pics/utsc.png" class="mr-3" alt="" id='exp-image'>
+                        </div>
+                        <div class="media-body">
+                            <h5 class="mt-0"><span>Web Developer</span> | University of Toronto Scarborough</h5>
+                            <h5 class="date">September 2020 - March 2021</h5>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique necessitatibus, soluta
+                            quam animi quis alias deserunt quos repudiandae natus excepturi autem quidem repellendus
+                            assumenda accusamus dolorum odio dolor labore nihil.
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <!-- <div class="col-md-11" style="padding-top: 10px;">
+                    <div class="media">
+                        <div class="center">
+                            <img src="pics/swiss1.JPG" class="mr-3" alt="..." id='exp-image'>
                         </div>
                         <div class="media-body">
                             <h5 class="mt-0"><span>Teaching Assistant</span> | University of Toronto</h5>
@@ -308,29 +339,10 @@
 
                 </div>
 
-                <div class="col-md-11">
+                <div class="col-md-11" style="padding-top: 0px;">
                     <div class="media">
                         <div class="center">
-                            <img src="pics/trees.jpg" class="mr-3" alt="..." id='exp-image'>
-                        </div>
-                        <div class="media-body">
-                            <h5 class="mt-0"><span>Teaching Assistant</span> | University of Toronto</h5>
-                            <h5 class="date">January 2020 - January 2020</h5>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad sapiente sit, impedit
-                            dignissimos quo suscipit placeat? Placeat porro ullam architecto, dolor unde aliquam
-                            tempore
-                            adipisci eius praesentium eveniet corrupti veritatis?
-                        </div>
-                    </div>
-
-
-
-                </div>
-
-                <div class="col-md-11">
-                    <div class="media">
-                        <div class="center">
-                            <img src="pics/trees.jpg" class="mr-3" alt="..." id='exp-image'>
+                            <img src="pics/bosnia1.JPG" class="mr-3" alt="..." id='exp-image'>
                         </div>
                         <div class="media-body">
                             <h5 class="mt-0"><span>Teaching Assistant</span> | University of Toronto</h5>
@@ -343,19 +355,56 @@
                         </div>
                     </div>
 
-                </div>
+                </div> -->
 
             </div>
 
-            <hr>
+            <hr id="photos-scroll">
 
         </div>
 
     </section>
 
 
+    <!-- PHOTOS  -->
+    <section class='container photos-container'>
+
+        <h2 class='photos-title' id='text-title'>Photo Gallery</h2>
+
+
+        <div class="photos-grid">
+
+            <!-- <div class="one wide"></div>
+            <div class="two wide"></div> -->
+            <div class="alb1"></div>
+            <div class="swiss"></div>
+            <div class="italy1"></div>
+
+            <div class="croatia"></div>
+            <div class="italy2"></div>
+            <div class="bosnia"></div>
+            <div class="alb2"></div>
+            <div class="alb3"></div>
+            <!-- <div class="random"></div> -->
+            <!-- <div class="seven box"></div>
+            <div class="seven box"></div> -->
+
+        </div>
+
+        <hr>
+
+
+
+    </section>
+
+
+
+
+
+
+
     <!-- FOOTER -->
-    <footer>
+    <section class="footer">
         <section class="contact">
             <a href="https://www.facebook.com/thevin.motha" target="_blank"><i class="fa fa-facebook-official"
                     aria-hidden="true" id="facebook"></i></a>
@@ -363,14 +412,18 @@
                     aria-hidden="true" id="instagram"></i></a>
             <a href="https://twitter.com/Aminishrimp" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"
                     id="twitter"></i></a>
-            <a href="" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true" id="linked"></i></a>
+            <a href="https://www.linkedin.com/in/stephanmotha/" target="_blank"><i class="fa fa-linkedin-square"
+                    aria-hidden="true" id="linked"></i></a>
             <a href="https://github.com/stephanmotha" target="_blank"><i class="fa fa-github-square" aria-hidden="true"
                     id="git-footer"></i> </a>
 
         </section>
+        <p>Stephan Motha ©2020</p>
 
-        Stephan Motha ©2020
-    </footer>
+    </section>
+
+
+
 
 
     <!-- Optional JavaScript -->
@@ -382,6 +435,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+
+    <script src="scripts.js"></script>
 </body>
 
 </html>

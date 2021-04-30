@@ -52,7 +52,7 @@ w.scroll(function () {
 
 //Scroll on nav click
 $(document).ready(function () {
-    $('a[href^="#"]').on('click', function (e) {
+    $('a[href^="# "]').on('click', function (e) {
         e.preventDefault();
 
         var target = this.hash,

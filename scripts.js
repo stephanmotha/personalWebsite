@@ -57,11 +57,12 @@ $(document).ready(function () {
 
         var target = this.hash,
             $target = $(target);
-
+        
         $('html, body').stop().animate({
             'scrollTop': $target.offset().top - 80
         }, 200, 'swing', function () {
-            window.location.hash = target - 5;
+            console.log(target)
+            // window.location.hash = target-5;
         });
     });
 });

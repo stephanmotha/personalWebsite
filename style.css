@@ -299,6 +299,13 @@ hr {
   border-radius: 20%;
 }
 
+/* #exp-image-sf {
+  max-width: 100px;
+  max-height: 200px;
+  display: block;
+  border-radius: 20%;
+} */
+
 .exp-title {
   margin-bottom: 10px;
   display: inline-block;
